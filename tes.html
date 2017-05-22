@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+
+
+</style>
+</head>
+<body onload="colors()">
+<script>
+function color(){
+setTimeout(function(){
+document.write("R");
+document.body.style.textAlign="center";
+document.body.style.fontSize="200px";
+document.body.style.backgroundColor="red"
+},1000);
+setTimeout(function(){
+document.write("B");
+document.body.style.textAlign="center";
+document.body.style.fontSize="200px";
+document.body.style.backgroundColor="blue"
+},2000);
+setTimeout(function(){
+document.write("G");
+document.body.style.textAlign="center";
+document.body.style.fontSize="200px";
+document.body.style.backgroundColor="green"
+},3000);
+setTimeout(function(){
+document.body.style.color="white";
+document.body.style.backgroundColor="black"
+},5000);
+setTimeout(function(){
+var x = document.querySelector("html");
+x.hidden = true;
+},6000);
+setTimeout(function(){
+var x = document.querySelector("html");
+x.hidden = false;
+},7000);
+						
+}
+function colors(){
+color();	
+}
+</script>
+</body>
+</html>
